@@ -1,0 +1,1578 @@
+{
+  "/account/email": {
+    "PATCH": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "email"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "password"
+        }
+      ]
+    }
+  },
+  "/account/name": {
+    "PATCH": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "name"
+        }
+      ]
+    }
+  },
+  "/account/password": {
+    "PATCH": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "oldPassword"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "password"
+        }
+      ]
+    }
+  },
+  "/account/prefs": {
+    "PATCH": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "prefs"
+        }
+      ]
+    }
+  },
+  "/account/recovery": {
+    "POST": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "email"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "url"
+        }
+      ]
+    },
+    "PUT": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "password"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "passwordAgain"
+        },
+        {
+          "producer_endpoint": "/account/recovery",
+          "producer_method": "POST",
+          "producer_resource_name": "secret",
+          "consumer_param": "secret"
+        },
+        {
+          "producer_endpoint": "/account/recovery",
+          "producer_method": "POST",
+          "producer_resource_name": "userId",
+          "consumer_param": "userId"
+        }
+      ]
+    }
+  },
+  "/account/sessions/{sessionId}": {
+    "DELETE": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "sessionId"
+        }
+      ]
+    },
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "sessionId"
+        }
+      ]
+    }
+  },
+  "/account/verification": {
+    "POST": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "url"
+        }
+      ]
+    },
+    "PUT": {
+      "Body": [
+        {
+          "producer_endpoint": "/account/verification",
+          "producer_method": "POST",
+          "producer_resource_name": "secret",
+          "consumer_param": "secret"
+        },
+        {
+          "producer_endpoint": "/account/verification",
+          "producer_method": "POST",
+          "producer_resource_name": "userId",
+          "consumer_param": "userId"
+        }
+      ]
+    }
+  },
+  "/avatars/browsers/{code}": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "code"
+        }
+      ],
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "height"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "quality"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "width"
+        }
+      ]
+    }
+  },
+  "/avatars/credit-cards/{code}": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "code"
+        }
+      ],
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "height"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "quality"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "width"
+        }
+      ]
+    }
+  },
+  "/avatars/favicon": {
+    "GET": {
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "url"
+        }
+      ]
+    }
+  },
+  "/avatars/flags/{code}": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "code"
+        }
+      ],
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "height"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "quality"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "width"
+        }
+      ]
+    }
+  },
+  "/avatars/image": {
+    "GET": {
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "height"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "url"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "width"
+        }
+      ]
+    }
+  },
+  "/avatars/initials": {
+    "GET": {
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "background"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "color"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "height"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "name"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "width"
+        }
+      ]
+    }
+  },
+  "/avatars/qr": {
+    "GET": {
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "download"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "margin"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "size"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "text"
+        }
+      ]
+    }
+  },
+  "/database/collections": {
+    "GET": {
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "limit"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "offset"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "orderType"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "search"
+        }
+      ]
+    },
+    "POST": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "name"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "read/[0]"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "rules/[0]"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "write/[0]"
+        }
+      ]
+    }
+  },
+  "/database/collections/{collectionId}": {
+    "DELETE": {
+      "Path": [
+        {
+          "producer_endpoint": "/database/collections/{collectionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "collectionId"
+        }
+      ]
+    },
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/database/collections/{collectionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "collectionId"
+        }
+      ]
+    },
+    "PUT": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "restler_custom_payload_uuid_suffix__collectionId",
+          "consumer_param": "collectionId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "name"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "read/[0]"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "rules/[0]"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "write/[0]"
+        }
+      ]
+    }
+  },
+  "/database/collections/{collectionId}/documents": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/database/collections/{collectionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "collectionId"
+        }
+      ],
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "filters"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "limit"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "offset"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "orderCast"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "orderField"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "orderType"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "search"
+        }
+      ]
+    },
+    "POST": {
+      "Path": [
+        {
+          "producer_endpoint": "/database/collections/{collectionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "collectionId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "data"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "parentDocument"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "parentProperty"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "parentPropertyType"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "read/[0]"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "write/[0]"
+        }
+      ]
+    }
+  },
+  "/database/collections/{collectionId}/documents/{documentId}": {
+    "DELETE": {
+      "Path": [
+        {
+          "producer_endpoint": "/database/collections/{collectionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "collectionId"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "documentId"
+        }
+      ]
+    },
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/database/collections/{collectionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "collectionId"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "documentId"
+        }
+      ]
+    },
+    "PATCH": {
+      "Path": [
+        {
+          "producer_endpoint": "/database/collections/{collectionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "collectionId"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "documentId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "data"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "read/[0]"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "write/[0]"
+        }
+      ]
+    }
+  },
+  "/functions": {
+    "GET": {
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "limit"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "offset"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "orderType"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "search"
+        }
+      ]
+    },
+    "POST": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "events/[0]"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "execute/[0]"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "name"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "runtime"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "schedule"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "timeout"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "vars"
+        }
+      ]
+    }
+  },
+  "/functions/{functionId}": {
+    "DELETE": {
+      "Path": [
+        {
+          "producer_endpoint": "/functions/{functionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "functionId"
+        }
+      ]
+    },
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/functions/{functionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "functionId"
+        }
+      ]
+    },
+    "PUT": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "restler_custom_payload_uuid_suffix__functionId",
+          "consumer_param": "functionId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "events/[0]"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "execute/[0]"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "name"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "schedule"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "timeout"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "vars"
+        }
+      ]
+    }
+  },
+  "/functions/{functionId}/executions": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/functions/{functionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "functionId"
+        }
+      ],
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "limit"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "offset"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "orderType"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "search"
+        }
+      ]
+    },
+    "POST": {
+      "Path": [
+        {
+          "producer_endpoint": "/functions/{functionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "functionId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "data"
+        }
+      ]
+    }
+  },
+  "/functions/{functionId}/executions/{executionId}": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "executionId"
+        },
+        {
+          "producer_endpoint": "/functions/{functionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "functionId"
+        }
+      ]
+    }
+  },
+  "/functions/{functionId}/tag": {
+    "PATCH": {
+      "Path": [
+        {
+          "producer_endpoint": "/functions/{functionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "functionId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "tag"
+        }
+      ]
+    }
+  },
+  "/functions/{functionId}/tags": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/functions/{functionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "functionId"
+        }
+      ],
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "limit"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "offset"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "orderType"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "search"
+        }
+      ]
+    },
+    "POST": {
+      "Path": [
+        {
+          "producer_endpoint": "/functions/{functionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "functionId"
+        }
+      ]
+    }
+  },
+  "/functions/{functionId}/tags/{tagId}": {
+    "DELETE": {
+      "Path": [
+        {
+          "producer_endpoint": "/functions/{functionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "functionId"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "tagId"
+        }
+      ]
+    },
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/functions/{functionId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "functionId"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "tagId"
+        }
+      ]
+    }
+  },
+  "/storage/files": {
+    "GET": {
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "limit"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "offset"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "orderType"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "search"
+        }
+      ]
+    }
+  },
+  "/storage/files/{fileId}": {
+    "DELETE": {
+      "Path": [
+        {
+          "producer_endpoint": "/storage/files/{fileId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "fileId"
+        }
+      ]
+    },
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/storage/files/{fileId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "fileId"
+        }
+      ]
+    },
+    "PUT": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "restler_custom_payload_uuid_suffix__fileId",
+          "consumer_param": "fileId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "read/[0]"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "write/[0]"
+        }
+      ]
+    }
+  },
+  "/storage/files/{fileId}/download": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/storage/files/{fileId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "fileId"
+        }
+      ]
+    }
+  },
+  "/storage/files/{fileId}/preview": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/storage/files/{fileId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "fileId"
+        }
+      ],
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "background"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "borderColor"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "borderRadius"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "borderWidth"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "gravity"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "height"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "opacity"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "output"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "quality"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "rotation"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "width"
+        }
+      ]
+    }
+  },
+  "/storage/files/{fileId}/view": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/storage/files/{fileId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "fileId"
+        }
+      ]
+    }
+  },
+  "/teams": {
+    "GET": {
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "limit"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "offset"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "orderType"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "search"
+        }
+      ]
+    },
+    "POST": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "name"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "roles/[0]"
+        }
+      ]
+    }
+  },
+  "/teams/{teamId}": {
+    "DELETE": {
+      "Path": [
+        {
+          "producer_endpoint": "/teams/{teamId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "teamId"
+        }
+      ]
+    },
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/teams/{teamId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "teamId"
+        }
+      ]
+    },
+    "PUT": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "restler_custom_payload_uuid_suffix__teamId",
+          "consumer_param": "teamId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "name"
+        }
+      ]
+    }
+  },
+  "/teams/{teamId}/memberships": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/teams/{teamId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "teamId"
+        }
+      ],
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "limit"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "offset"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "orderType"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "search"
+        }
+      ]
+    },
+    "POST": {
+      "Path": [
+        {
+          "producer_endpoint": "/teams/{teamId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "teamId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "email"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "name"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "roles/[0]"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "url"
+        }
+      ]
+    }
+  },
+  "/teams/{teamId}/memberships/{membershipId}": {
+    "DELETE": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "membershipId"
+        },
+        {
+          "producer_endpoint": "/teams/{teamId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "teamId"
+        }
+      ]
+    },
+    "PATCH": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "membershipId"
+        },
+        {
+          "producer_endpoint": "/teams/{teamId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "teamId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "/teams/{teamId}/memberships",
+          "producer_method": "POST",
+          "producer_resource_name": "roles/[0]",
+          "consumer_param": "roles/[0]"
+        }
+      ]
+    }
+  },
+  "/teams/{teamId}/memberships/{membershipId}/status": {
+    "PATCH": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "membershipId"
+        },
+        {
+          "producer_endpoint": "/teams/{teamId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "name",
+          "consumer_param": "teamId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "secret"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "userId"
+        }
+      ]
+    }
+  },
+  "/users": {
+    "GET": {
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "limit"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "offset"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "orderType"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "search"
+        }
+      ]
+    },
+    "POST": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "email"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "name"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "password"
+        }
+      ]
+    }
+  },
+  "/users/{userId}": {
+    "DELETE": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "userId"
+        }
+      ]
+    },
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "userId"
+        }
+      ]
+    }
+  },
+  "/users/{userId}/logs": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "userId"
+        }
+      ]
+    }
+  },
+  "/users/{userId}/prefs": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "userId"
+        }
+      ]
+    },
+    "PATCH": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "userId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "prefs"
+        }
+      ]
+    }
+  },
+  "/users/{userId}/sessions": {
+    "DELETE": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "userId"
+        }
+      ]
+    },
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "userId"
+        }
+      ]
+    }
+  },
+  "/users/{userId}/sessions/{sessionId}": {
+    "DELETE": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "sessionId"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "userId"
+        }
+      ]
+    }
+  },
+  "/users/{userId}/status": {
+    "PATCH": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "userId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "status"
+        }
+      ]
+    }
+  },
+  "/users/{userId}/verification": {
+    "PATCH": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "userId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "emailVerification"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,109 @@
+
+%import common.ESCAPED_STRING
+%import common.WS
+%ignore WS
+
+start: api_template
+
+request_id: "requestId" ":" "{" "endpoint" "="  ESCAPED_STRING "xMsPath" "=" request_id_xmspath_option "method" "=" operation_method "}"
+// request_id_endpoint: ESCAPED_STRING
+request_id_xmspath_option: "Some" xms_path | none
+xms_path: "{" "pathPart" "=" xms_path_pathpart "queryPart" "=" xms_path_querypart "}"
+xms_path_pathpart: ESCAPED_STRING
+xms_path_querypart: ESCAPED_STRING
+operation_method: /[a-zA-Z]+/
+none: "None" | "<null>"
+
+
+request_parameters: "requestParameters" ":" "{" "path" "=" request_parameters_payload "header" "=" request_parameters_header "query" "=" request_parameters_header "body" "=" request_parameters_header "}"
+request_parameters_payload: request_parameters_payload_parameter_list | request_parameters_payload_example
+request_parameters_payload_parameter_list: "ParameterList" "(" ["seq"] "[" request_parameter? (";" request_parameter)* "]" ")"
+request_parameters_payload_example: "Example" "(" fuzzing_payload ")" // 不确定
+
+parameter_payload_source: /[a-zA-Z]+/
+// "Schema" | "Examples" | "DictionaryCustomPayload"
+
+request_parameters_header: "[" request_parameters_header_element (";" request_parameters_header_element)* "]"
+request_parameters_header_element: "(" parameter_payload_source "," request_parameters_payload ")"
+
+request_parameter: "{" "name" "=" ESCAPED_STRING "payload" "=" tree_node "serialization" "=" parameter_serialization "}"
+// request_parameter_name: ESCAPED_STRING
+parameter_serialization: /.+?(?=})/s
+parameter_serialization_option: "Some" parameter_serialization | none
+
+//                 "Get" -> operation_get
+//                 | "Post" -> operation_post
+//                 | "Put" -> operation_put
+//                 | "Delete" -> operation_delete
+//                 | "Patch" -> operation_patch
+//                 | "Options" -> operation_options
+//                 | "Head" -> 
+//                 | "Trace" 
+//                 | "NotSupported"
+
+// payload_constant: "(" primitive_type value ")"
+payload_fuzzable: "Fuzzable" "{" payload_fuzzable_args "}"
+payload_fuzzable_args: "primitiveType" "=" primitive_type "defaultValue" "=" default_value "exampleValue" "=" example_value "parameterName" "=" parameter_name "dynamicObject" "=" dynamic_object
+payload_constant: "Constant" "(" primitive_type "," value ")"
+payload_parts: "PayloadParts" "["fuzzing_payload (";" fuzzing_payload)* "]"
+fuzzing_payload: payload_fuzzable | payload_constant | payload_parts | any
+any: /.+?(?=isRequired)/s
+default_value: default_any_value
+default_any_value: /.+?(?=example)/s
+example_value: example_option_value
+example_option_value: none | "Some" example_any_value
+example_any_value: /.+?(?=param)/s
+parameter_name: parameter_name_option_value
+parameter_name_option_value: none | "Some" parameter_name_any_value
+parameter_name_any_value: /.+?(?=dynamic)/s
+dynamic_object: dynamic_object_option_value
+dynamic_object_option_value: none | "Some" dynamic_object_any_value
+dynamic_object_any_value: /.+?(?=})/s
+primitive_type: type_name | enum_type
+type_name: /[a-zA-Z]+/
+// "String" | "Object" | "Number" | "Int" | "Uuid" | "boolean" | "DateTime" | "Date" | 
+enum_type: "Enum" enum_args
+enum_args: "(" enum_tag "," type_name "," value_list "," option_value ")"
+// enum_arg: ESCAPED_STRING | type_name | value_list | option_value 
+enum_tag: ESCAPED_STRING
+value_list: "[" value? (";" value)* "]"
+value: ESCAPED_STRING 
+option_value: "Some" ESCAPED_STRING | none
+// type LeafProperty =
+//     {
+//         name : string
+//         payload : FuzzingPayload
+//         isRequired : boolean
+//         isReadOnly : boolean
+//     }
+leaf_node: "LeafNode" "{" "name" "=" leaf_node_name "payload" "=" fuzzing_payload "isRequired" "=" boolean "isReadOnly" "=" boolean "}"
+leaf_node_name: ESCAPED_STRING
+// leaf_node_required: boolean
+// leaf_node_readonly: boolean
+boolean: "true"->true | "false"->false
+inode_data: "{" "name" "=" inner_node_name "payload" "=" fuzzing_payload_option "propertyType" "=" nested_type "isRequired" "=" boolean "isReadOnly" "=" boolean "}"
+inner_node_name: ESCAPED_STRING
+// inner_node_required: boolean
+// inner_node_readonly: boolean
+nested_type: /[a-zA-Z]+/
+// "Array" | "Object" | "Property"
+fuzzing_payload_option: fuzzing_payload | none
+internal_node: "InternalNode" "(" inode_data "," seq_internal_node ")"
+tree_node: leaf_node | internal_node
+seq_internal_node: ["seq"] "[" tree_node? (";" tree_node)* "]"
+
+response: "response" ":" ("Some"  response_type  | none)
+response_type:  "{" "bodyResponse" "=" tree_node_option "headerResponse" "=" response_type_headerresponse "linkAnnotations" "=" ignored_field "}"
+tree_node_option: "Some" "(" tree_node ")" | none
+response_type_headerresponse: "[" response_type_headerresponse_element? (";" response_type_headerresponse_element)* "]"
+response_type_headerresponse_element: "(" ESCAPED_STRING "," tree_node ")"
+
+
+
+ignored_field: "seq" "[" ignored_content "]"
+
+ignored_content: (NON_BRACKET_CHAR | "[" ignored_content "]" | "(" ignored_content ")" | "{" ignored_content "}")*
+
+NON_BRACKET_CHAR: /[^()[\]{}]+/
+
+api_template: request_id request_parameters response

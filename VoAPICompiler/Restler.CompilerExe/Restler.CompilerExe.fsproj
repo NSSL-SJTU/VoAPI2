@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <NoWarn>NU1603</NoWarn>
+    <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OtherFlags>
+    </OtherFlags>
+    <Deterministic>false</Deterministic>
+    <Tailcalls>true</Tailcalls>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Tailcalls>true</Tailcalls>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Restler.Compiler\Compiler.fs" />
+    <Compile Include="../Restler.Compiler/Grammar.fs" />
+    <Compile Include="Program.fs" />
+    <Content Include="packages.lock.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Restler.Compiler\Restler.Compiler.fsproj" />
+    <PackageReference Include="Microsoft.FSharpLu.Json" Version="0.11.7" />
+    <PackageReference Include="NJsonSchema" Version="10.7.2" />
+    <PackageReference Include="NSwag.Core" Version="13.16.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="4.7.2" />
+  </ItemGroup>
+</Project>

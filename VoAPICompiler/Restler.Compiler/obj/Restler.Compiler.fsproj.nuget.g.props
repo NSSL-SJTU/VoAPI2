@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\beet1e\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.3.3</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\beet1e\.nuget\packages\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)microsoft.fsharplu\0.11.7\contentFiles\any\netstandard2.0\Sysprep.ps1" Condition="Exists('$(NuGetPackageRoot)microsoft.fsharplu\0.11.7\contentFiles\any\netstandard2.0\Sysprep.ps1')">
+      <NuGetPackageId>Microsoft.FSharpLu</NuGetPackageId>
+      <NuGetPackageVersion>0.11.7</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Sysprep.ps1</TargetPath>
+      <Private>True</Private>
+      <Link>Sysprep.ps1</Link>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgPluralize_NET_Core Condition=" '$(PkgPluralize_NET_Core)' == '' ">C:\Users\beet1e\.nuget\packages\pluralize.net.core\1.0.0</PkgPluralize_NET_Core>
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\beet1e\.nuget\packages\newtonsoft.json\13.0.1</PkgNewtonsoft_Json>
+    <PkgNJsonSchema Condition=" '$(PkgNJsonSchema)' == '' ">C:\Users\beet1e\.nuget\packages\njsonschema\10.7.2</PkgNJsonSchema>
+    <PkgNSwag_Core Condition=" '$(PkgNSwag_Core)' == '' ">C:\Users\beet1e\.nuget\packages\nswag.core\13.16.1</PkgNSwag_Core>
+    <PkgNSwag_Core_Yaml Condition=" '$(PkgNSwag_Core_Yaml)' == '' ">C:\Users\beet1e\.nuget\packages\nswag.core.yaml\13.16.1</PkgNSwag_Core_Yaml>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\beet1e\.nuget\packages\fsharp.core\4.7.2</PkgFSharp_Core>
+    <PkgMicrosoft_FSharpLu_Json Condition=" '$(PkgMicrosoft_FSharpLu_Json)' == '' ">C:\Users\beet1e\.nuget\packages\microsoft.fsharplu.json\0.11.7</PkgMicrosoft_FSharpLu_Json>
+    <PkgMicrosoft_FSharpLu Condition=" '$(PkgMicrosoft_FSharpLu)' == '' ">C:\Users\beet1e\.nuget\packages\microsoft.fsharplu\0.11.7</PkgMicrosoft_FSharpLu>
+    <PkgMicrosoft_ApplicationInsights Condition=" '$(PkgMicrosoft_ApplicationInsights)' == '' ">C:\Users\beet1e\.nuget\packages\microsoft.applicationinsights\2.14.0</PkgMicrosoft_ApplicationInsights>
+  </PropertyGroup>
+</Project>

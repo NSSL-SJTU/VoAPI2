@@ -1,0 +1,160 @@
+{
+  "basePath": "/api",
+  "consumes": [
+    "application/json"
+  ],
+  "host": "localhost:8888",
+  "info": {
+    "description": "Small example for POST with input producer",
+    "title": "Input producer test case",
+    "version": "1.0.0"
+  },
+  "definitions": {
+    "fileId":{
+        "type": "String",
+        "description":  "the file id"
+    },
+    "Archive": {
+      "properties": {
+        "name": {
+          "type": "object"
+        },
+        "tag": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "paths": {
+    "/archive/{archiveId}/{label}": {
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "archiveId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "label",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/archive": {
+      "post": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "hash",
+            "required": true,
+            "type": "number"
+          },
+          {
+            "in": "body",
+            "name": "bodyParam",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Archive"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/archive/{archiveId}": {
+      "put": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "archiveId",
+            "required": true,
+            "type": "String"
+          },
+          {
+            "in": "query",
+            "name": "sig",
+            "required": true,
+            "type": "number"
+          },
+          {
+            "in": "body",
+            "name": "bodyParam",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Archive"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/file/{fileId}": {
+      "post": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "fileId",
+            "required": true,
+            "type": "String"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "fileId",
+            "required": true,
+            "type": "String"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/fileId"
+            }
+          }
+        }
+      },
+      "delete": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "fileId",
+            "required": true,
+            "type": "String"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "swagger": "2.0"
+}

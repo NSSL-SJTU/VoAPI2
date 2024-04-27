@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <NoWarn>NU1603</NoWarn>
+    <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OtherFlags></OtherFlags>
+    <Deterministic>false</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OtherFlags></OtherFlags>
+    <Tailcalls>true</Tailcalls>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Utilities.fs" />
+    <Compile Include="Config.fs" />
+    <Compile Include="Telemetry.fs" />
+    <Compile Include="XMsPaths.fs" />
+    <Compile Include="SwaggerSpecPreprocessor.fs" />
+    <Compile Include="Swagger.fs" />
+    <Compile Include="AccessPaths.fs" />
+    <Compile Include="Grammar.fs" />
+    <Compile Include="SwaggerVisitors.fs" />
+    <Compile Include="Examples.fs" />
+    <Compile Include="ApiResourceTypes.fs" />
+    <Compile Include="Dictionary.fs" />
+    <Compile Include="RestlerEngineSettings.fs" />
+    <Compile Include="Annotations.fs" />
+    <Compile Include="DependencyAnalysisTypes.fs" />
+    <Compile Include="Dependencies.fs" />
+    <Compile Include="Compiler.fs" />
+    <Compile Include="CodeGenerator.fs" />
+    <Compile Include="Workflow.fs" />
+    <Content Include="packages.lock.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.14.0" />
+    <PackageReference Include="Microsoft.FSharpLu" Version="0.11.7" />
+    <PackageReference Include="Microsoft.FSharpLu.Json" Version="0.11.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NJsonSchema" Version="10.7.2" />
+    <PackageReference Include="NSwag.Core" Version="13.16.1" />
+    <PackageReference Include="NSwag.Core.Yaml" Version="13.16.1" />
+    <PackageReference Include="Pluralize.NET.Core" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="4.7.2" />
+  </ItemGroup>
+</Project>

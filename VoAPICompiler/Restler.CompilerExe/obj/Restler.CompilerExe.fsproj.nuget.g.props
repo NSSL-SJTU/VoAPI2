@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\beet1e\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.3.3</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\beet1e\.nuget\packages\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgNJsonSchema Condition=" '$(PkgNJsonSchema)' == '' ">C:\Users\beet1e\.nuget\packages\njsonschema\10.7.2</PkgNJsonSchema>
+    <PkgNSwag_Core Condition=" '$(PkgNSwag_Core)' == '' ">C:\Users\beet1e\.nuget\packages\nswag.core\13.16.1</PkgNSwag_Core>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\beet1e\.nuget\packages\fsharp.core\4.7.2</PkgFSharp_Core>
+    <PkgMicrosoft_FSharpLu_Json Condition=" '$(PkgMicrosoft_FSharpLu_Json)' == '' ">C:\Users\beet1e\.nuget\packages\microsoft.fsharplu.json\0.11.7</PkgMicrosoft_FSharpLu_Json>
+  </PropertyGroup>
+</Project>

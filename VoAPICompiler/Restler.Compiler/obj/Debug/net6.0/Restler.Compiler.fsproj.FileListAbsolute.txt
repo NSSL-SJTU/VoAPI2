@@ -1,0 +1,10 @@
+D:\workspace\NSSL\VoAPI2-github\VoAPICompiler\Restler.Compiler\bin\Debug\net6.0\Sysprep.ps1
+D:\workspace\NSSL\VoAPI2-github\VoAPICompiler\Restler.Compiler\bin\Debug\net6.0\Restler.Compiler.deps.json
+D:\workspace\NSSL\VoAPI2-github\VoAPICompiler\Restler.Compiler\bin\Debug\net6.0\Restler.Compiler.dll
+D:\workspace\NSSL\VoAPI2-github\VoAPICompiler\Restler.Compiler\bin\Debug\net6.0\Restler.Compiler.pdb
+D:\workspace\NSSL\VoAPI2-github\VoAPICompiler\Restler.Compiler\obj\Debug\net6.0\Restler.Compiler.fsproj.AssemblyReference.cache
+D:\workspace\NSSL\VoAPI2-github\VoAPICompiler\Restler.Compiler\obj\Debug\net6.0\Restler.Compiler.AssemblyInfoInputs.cache
+D:\workspace\NSSL\VoAPI2-github\VoAPICompiler\Restler.Compiler\obj\Debug\net6.0\Restler.Compiler.AssemblyInfo.fs
+D:\workspace\NSSL\VoAPI2-github\VoAPICompiler\Restler.Compiler\obj\Debug\net6.0\Restler.Compiler.fsproj.CoreCompileInputs.cache
+D:\workspace\NSSL\VoAPI2-github\VoAPICompiler\Restler.Compiler\obj\Debug\net6.0\Restler.Compiler.dll
+D:\workspace\NSSL\VoAPI2-github\VoAPICompiler\Restler.Compiler\obj\Debug\net6.0\Restler.Compiler.pdb

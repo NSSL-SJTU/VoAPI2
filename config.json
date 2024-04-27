@@ -1,0 +1,22 @@
+{
+  "SwaggerSpecFilePath": [
+    "D:\\workspace\\NSSL\\VoAPI2-github\\AppwriteExample\\APISpec-appwrite.json"
+  ],
+  "GrammarOutputDirectoryPath": "D:\\workspace\\NSSL\\VoAPI2-github\\VoAPICompilerBin\\Compile",
+  "IncludeOptionalParameters": true,
+  "UseHeaderExamples": false,
+  "UsePathExamples": false,
+  "UseQueryExamples": true,
+  "UseBodyExamples": false,
+  "UseAllExamplePayloads": false,
+  "DiscoverExamples": false,
+  "ExamplesDirectory": "",
+  "DataFuzzing": true,
+  "ReadOnlyFuzz": false,
+  "ResolveQueryDependencies": true,
+  "ResolveBodyDependencies": true,
+  "ResolveHeaderDependencies": true,
+  "UseRefreshableToken": true,
+  "AllowGetProducers": true,
+  "TrackFuzzedParameterNames": false
+}

@@ -1,0 +1,38 @@
+{
+  "restler_fuzzable_string": [
+    "RESTlerString"
+  ],
+  "restler_fuzzable_string_unquoted": [],
+  "restler_fuzzable_datetime": [
+    "RESTlerDateTime"
+  ],
+  "restler_fuzzable_datetime_unquoted": [],
+  "restler_fuzzable_date": [
+    "RESTlerDate"
+  ],
+  "restler_fuzzable_date_unquoted": [],
+  "restler_fuzzable_uuid4": [
+    "RESTlerUuid"
+  ],
+  "restler_fuzzable_uuid4_unquoted": [],
+  "restler_fuzzable_int": [
+    "RESTlerInt"
+  ],
+  "restler_fuzzable_number": [
+    "RESTlerNumber"
+  ],
+  "restler_fuzzable_bool": [
+    "RESTlerBool"
+  ],
+  "restler_fuzzable_object": [
+    "RESTlerObject"
+  ],
+  "restler_custom_payload": {},
+  "restler_custom_payload_unquoted": {},
+  "restler_custom_payload_uuid4_suffix": {
+    "collectionId": "collection",
+    "fileId": "fileid",
+    "functionId": "functionid",
+    "teamId": "teamid"
+  }
+}

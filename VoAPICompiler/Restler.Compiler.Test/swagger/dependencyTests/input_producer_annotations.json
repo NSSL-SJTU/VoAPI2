@@ -1,0 +1,34 @@
+{
+  "x-restler-global-annotations": [
+    {
+      "producer_endpoint": "/file/{fileId}",
+      "producer_method": "POST",
+      "producer_resource_name": "fileId",
+      "consumer_param": "fileId"
+    },
+    {
+      "producer_endpoint": "/archive",
+      "producer_method": "POST",
+      "producer_resource_name": "hash",
+      "consumer_param": "sig"
+    },
+    {
+      "producer_endpoint": "/archive",
+      "producer_method": "POST",
+      "producer_resource_name": "/tag",
+      "consumer_param": "label"
+    },
+    {
+      "producer_endpoint": "/archive",
+      "producer_method": "POST",
+      "producer_resource_name": "/tag",
+      "consumer_param": "/tag"
+    },
+    {
+      "producer_endpoint": "/archive",
+      "producer_method": "POST",
+      "producer_resource_name": "/name",
+      "consumer_param": "/name"
+    }
+  ]
+}

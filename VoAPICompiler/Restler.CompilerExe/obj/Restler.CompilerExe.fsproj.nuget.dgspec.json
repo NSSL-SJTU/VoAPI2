@@ -1,0 +1,195 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\workspace\\NSSL\\VoAPI\\VoAPI-compiler\\Restler.CompilerExe\\Restler.CompilerExe.fsproj": {}
+  },
+  "projects": {
+    "D:\\workspace\\NSSL\\VoAPI\\VoAPI-compiler\\Restler.CompilerExe\\Restler.CompilerExe.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\workspace\\NSSL\\VoAPI\\VoAPI-compiler\\Restler.CompilerExe\\Restler.CompilerExe.fsproj",
+        "projectName": "Restler.CompilerExe",
+        "projectPath": "D:\\workspace\\NSSL\\VoAPI\\VoAPI-compiler\\Restler.CompilerExe\\Restler.CompilerExe.fsproj",
+        "packagesPath": "C:\\Users\\beet1e\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\NSSL\\VoAPI\\VoAPI-compiler\\Restler.CompilerExe\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\beet1e\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\6.0.412\\FSharp\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\workspace\\NSSL\\VoAPI\\VoAPI-compiler\\Restler.Compiler\\Restler.Compiler.fsproj": {
+                "projectPath": "D:\\workspace\\NSSL\\VoAPI\\VoAPI-compiler\\Restler.Compiler\\Restler.Compiler.fsproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.FSharpLu.Json": {
+              "target": "Package",
+              "version": "[0.11.7, )",
+              "generatePathProperty": true
+            },
+            "NJsonSchema": {
+              "target": "Package",
+              "version": "[10.7.2, )",
+              "generatePathProperty": true
+            },
+            "NSwag.Core": {
+              "target": "Package",
+              "version": "[13.16.1, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.412\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\workspace\\NSSL\\VoAPI\\VoAPI-compiler\\Restler.Compiler\\Restler.Compiler.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\workspace\\NSSL\\VoAPI\\VoAPI-compiler\\Restler.Compiler\\Restler.Compiler.fsproj",
+        "projectName": "Restler.Compiler",
+        "projectPath": "D:\\workspace\\NSSL\\VoAPI\\VoAPI-compiler\\Restler.Compiler\\Restler.Compiler.fsproj",
+        "packagesPath": "C:\\Users\\beet1e\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\NSSL\\VoAPI\\VoAPI-compiler\\Restler.Compiler\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\beet1e\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\6.0.412\\FSharp\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.ApplicationInsights": {
+              "target": "Package",
+              "version": "[2.14.0, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.FSharpLu": {
+              "target": "Package",
+              "version": "[0.11.7, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.FSharpLu.Json": {
+              "target": "Package",
+              "version": "[0.11.7, )",
+              "generatePathProperty": true
+            },
+            "NJsonSchema": {
+              "target": "Package",
+              "version": "[10.7.2, )",
+              "generatePathProperty": true
+            },
+            "NSwag.Core": {
+              "target": "Package",
+              "version": "[13.16.1, )",
+              "generatePathProperty": true
+            },
+            "NSwag.Core.Yaml": {
+              "target": "Package",
+              "version": "[13.16.1, )",
+              "generatePathProperty": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )",
+              "generatePathProperty": true
+            },
+            "Pluralize.NET.Core": {
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.412\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
